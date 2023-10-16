@@ -1,0 +1,16 @@
+{
+    "name": "Ovarium",
+    "short_name": "Ovarium",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffebef",
+    "theme_color": "#dda5b0",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/img/icoOvarium.png",
+        "type": "image/png", "sizes": "192x192"
+      }
+    ]
+  }
+  

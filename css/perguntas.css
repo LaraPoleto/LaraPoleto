@@ -1,0 +1,256 @@
+:root {
+    --main-bg-color: #fdeff2;
+    --primary-color: black;
+    --secondary-color: black;
+    font-family: 'Nunito', sans-serif;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--primary-color);
+}
+
+a:visited {
+    color: var(--primary-color);
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header#global_header {
+    text-align: center;
+    margin: 1rem 0;
+    display: flex;
+    padding: 0 0.5rem;
+}
+
+header#global_header h1 {
+    font-size: 3rem;
+    width: 100%;
+}
+
+header#global_header #btn_menu:hover {
+    cursor: pointer;
+}
+
+footer#global_footer {
+    padding-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+main#global_main {
+    position: relative;
+    width: 100%;
+    justify-self: center;
+}
+
+aside#menu {
+    position: absolute;
+    float: left;
+    top: 0;
+    height: 100%;
+    min-width: 60%;
+    max-width: 80%;
+    background-color: var(--menu-bg-color);
+    transition: visibility 0.5s linear, opacity 0.5s linear;
+    visibility: hidden;
+    opacity: 0;
+    padding: 1rem;
+}
+
+aside#menu ul {
+    margin-top: 1rem;
+    list-style-type: none;
+}
+
+aside#menu h3 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+aside#menu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+aside#menu.opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.titulo {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+    font-size: 20px;
+}
+
+.main_div {
+    display: flex;
+    color: var(--secondary-color);
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+#questao {
+    color: var(--primary-color);
+    text-align: justify;
+    font-size: 18px;
+}
+
+.comando {
+    margin-bottom: 2vh;
+}
+
+dialog {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #F7D5FA;
+    border:#F7D5FA;
+}
+
+#modal p {
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    padding: 6px;
+}
+
+#modalContent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #F7D5FA;
+    width: 78vw;
+    max-height: 35vh;
+    padding: 5px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    font-size: 14px !important;
+    line-height: 2;
+    overflow: auto;
+    text-indent: 2em;
+}
+
+
+.divBtn {
+    margin-top: 2vh;
+    width: 78vw;
+    text-align: center;
+}
+
+.btn1 {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: #f7d9df;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    margin-right: 1%;
+    cursor: pointer;
+    margin: 4px;
+    margin-bottom: 5vh;
+}
+
+.btnM {
+    width: 78vw;
+    text-align: end;
+}
+
+.btnModel {
+    width: 30vw;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: #f7d9df;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    margin-right: 1%;
+    cursor: pointer;
+    margin: 4px;
+    margin-bottom: 5vh;
+}
+
+.red+label {
+    transition: all 0.5s ease-in-out;
+    color: #ff4920 !important;
+    padding: 5px;
+    padding-right: 30px;
+}
+
+.green+label {
+    transition: all 0.5s ease-in-out;
+    color: #005515 !important;
+
+}
+
+.alt input {
+    display: none;
+}
+
+.alt input+label::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.alt input:checked+label::before {
+    background-color: black;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+footer#global_footer img,
+header#global_header img,
+main#global_main aside#menu img {
+    width: 2rem;
+    height: 2rem;
+}

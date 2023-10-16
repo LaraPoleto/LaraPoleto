@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ovarium - Perguntas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/perguntas.css" />
+    <link rel="stylesheet" href="css/css_especifico.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link href="img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <header id="global_header">
+        <a id="btn_menu" href="javascript:void(0)">
+            <img src="img/menu.svg" alt="Voltar" id="show_menu" />
+        </a>
+        <h1> Ovarium </h1>
+    </header>
+
+    <main id="global_main">
+        <aside id="menu">
+            <h3>Menu</h3>
+            <ul>
+                <li>
+                    <a href="perguntas.html">
+                        <img src="img/question.svg" alt="Perguntas" />
+                        Perguntas
+                    </a>
+                </li>
+                <li>
+                    <a href="desafios.html">
+                        <img src="img/puzzle.svg" alt="Desafios" />
+                        Desafios
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <p class="titulo">Questões:</p>
+
+        <div class="main_div">
+            <div id="questao"></div>
+        </div>
+
+        <dialog id="modal">
+            <p>Resposta</p>
+            <hr>
+            <div id="modalContent">
+            </div>
+            <hr>
+            <div class="btnM">
+                <button onclick="fecharModalQuestao()" class="btnModel">Fechar</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer id="global_footer">
+        <a href="perguntas.html">
+            <img src="img/back.svg" alt="Voltar" />
+        </a>
+        <a href="index.html">
+            <img id="ico_home" src="img/home.svg" alt="Página inicial" />
+        </a>
+        <a href="tutorial.html">
+            <img id="ico_info" src="img/information.svg" alt="Tutorial" />
+        </a>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/questoes.js"></script>
+    <script src="js/func_qst.js"></script>
+</body>
+
+</html>
