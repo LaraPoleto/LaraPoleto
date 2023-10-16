@@ -337,10 +337,10 @@ for (let questao of questoes) {
     for (let alternativa of listaAlternativas) {
         ques.innerHTML += `
         <div class="alt">
-        <input type="radio" id="${alternativa.letra}" 
+        <input type="radio" id="questao${index}${alternativa.letra}" 
         name="questao${index}" 
         class="${alternativa.classificacao}" />
-        <label for="${alternativa.letra}" class="classLabel">
+        <label for="questao${index}${alternativa.letra}" class="classLabel">
         ${alternativa.letra}) ${alternativa.alternativa}</label>
         </div>
         `;
