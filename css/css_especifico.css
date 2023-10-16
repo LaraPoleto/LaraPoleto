@@ -1,6 +1,8 @@
 :root {
+  --menu-bg-color:#f1c3cd;
   --main-bg-color: #fdeff2;
   --primary-color: black;
   --secondary-color: black;
   font-family: 'Nunito', sans-serif;
 }
+
