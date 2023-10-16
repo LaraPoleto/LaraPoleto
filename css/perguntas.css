@@ -169,6 +169,7 @@ dialog {
 }
 
 .btn1 {
+    padding: 5px;
     width: 30vw;
     height: 5vh;
     border-radius: 8px;
