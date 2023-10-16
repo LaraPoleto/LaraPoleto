@@ -130,6 +130,7 @@ aside#menu.opened {
 
 .btn{
   width: 45vw;
+  padding: 5px;
   height: 5vh;
   border-radius: 8px;
   background-color: #f7d9df;
