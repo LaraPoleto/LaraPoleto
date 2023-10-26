@@ -1,4 +1,4 @@
-const staticDevOvarium = "dev-ovarium-site-v1"
+const staticDevOvarium = "dev-ovarium-site-v1";
 const assets = [
   "/",
   "/index.html",
@@ -95,7 +95,6 @@ const assets = [
   "/img/home.svg",
   "/img/information.svg",
   "/img/interrogacao.png",
-  "/img/logo.png",
   "/img/menu.svg",
   "/img/ovarios.jpg",
   "/img/puzzle.svg",
@@ -104,20 +103,33 @@ const assets = [
   "/img/utero.jpg",
   "/img/vagina.jpg",
   "/img/vestVag.png",
-]
+];
 
-self.addEventListener("install", installEvent => {
+self.addEventListener("install", (installEvent) => {
   installEvent.waitUntil(
-    caches.open(staticDevOvarium).then(cache => {
-      cache.addAll(assets)
+    caches.open(staticDevOvarium).then(async (cache) => {
+      let ok;
+      try {
+        ok = await cache.addAll(assets);
+      } catch (err) {
+        console.error("sw: cache.addAll");
+        for (let i of assets) {
+          try {
+            ok = await cache.add(i);
+          } catch (err) {
+            console.log(err);
+            console.warn("sw: cache.add", i);
+          }
+        }
+      }
     })
-  )
-})
+  );
+});
 
-self.addEventListener("fetch", fetchEvent => {
+self.addEventListener("fetch", (fetchEvent) => {
   fetchEvent.respondWith(
-    caches.match(fetchEvent.request).then(res => {
-      return res || fetch(fetchEvent.request)
+    caches.match(fetchEvent.request).then((res) => {
+      return res || fetch(fetchEvent.request);
     })
-  )
-})
+  );
+});
