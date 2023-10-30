@@ -132,4 +132,5 @@ self.addEventListener("fetch", (fetchEvent) => {
       return res || fetch(fetchEvent.request);
     })
   );
-});
+})
+;
