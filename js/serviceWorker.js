@@ -95,7 +95,6 @@ const assets = [
   "/img/home.svg",
   "/img/information.svg",
   "/img/interrogacao.png",
-  "/img/logo.png",
   "/img/menu.svg",
   "/img/ovarios.jpg",
   "/img/puzzle.svg",
