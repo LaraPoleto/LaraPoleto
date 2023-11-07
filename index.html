@@ -11,7 +11,7 @@
       media="screen"
       href="css/index.css"
     />
-    <link rel="manifest" href="js/manifest.json" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="css/css_especifico.css" />
     <link href="img/favicon.gif" rel="shortcut icon" type="image/x-icon" />
   </head>
@@ -86,7 +86,7 @@
   <script>
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker
-        .register("js/serviceWorker.js")
+        .register("serviceWorker.js")
         .then((registration) => {
           console.log("SW Registered!");
           console.log(registration);
