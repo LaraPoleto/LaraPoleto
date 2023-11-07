@@ -6,7 +6,7 @@
     "background_color": "#ffebef",
     "display": "standalone",
     "orientation": "portrait",
-    "scope": "https://larapoleto.github.io/Ovarium",
+    "scope": "https://larapoleto.github.io/Ovarium/",
     "start_url": "/index.html",
     "icons": [
       {
