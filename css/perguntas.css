@@ -132,8 +132,8 @@ aside#menu.opened {
 dialog {
     width: 80vw;
     margin: 0 auto;
-    background-color: #F7D5FA;
-    border:#F7D5FA;
+    background-color: #fdeff2;
+    border:#fdeff2;
 }
 
 #modal p {
